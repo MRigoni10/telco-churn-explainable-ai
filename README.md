@@ -16,8 +16,7 @@ Retaining existing customers is significantly cheaper than acquiring new ones. T
 - **Top Churn Drivers:** Month-to-month contracts, payment via Electronic Check, and absence of Tech Support.
 - **Business Impact:** Targeting the top at-risk cohort with proactive retention offers can save an estimated ~€25,000+ in customer lifetime value on the test sample.
 
-## Quickstart
-```bash
-git clone [https://github.com/](https://github.com/)<MRigoni10>/telco-churn-explainable-ai.git
-cd telco-churn-explainable-ai
-pip install -r requirements.txt
+## How to Run the Project
+The complete code is available in the interactive notebook. You can run it with a single click:
+
+[! [Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TiglJvX3sAcY-IfouEEYokVW26zvqhwV)
