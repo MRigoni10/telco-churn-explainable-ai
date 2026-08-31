@@ -12,3 +12,5 @@ Acquisire nuovi clienti costa da 5 a 7 volte più che trattenerne uno esistente.
 ## 💡 Business Impact & Risultati
 - **Fattori Critici di Churn:** Contratti mensili (*Month-to-Month*), metodo di pagamento con *Electronic Check* e assenza di servizi di supporto tecnico (*TechSupport*).
 - **Simulazione ROI:** Su un campione di test di ~1.400 clienti, il modello consente di recuperare fino al 40% dei clienti a rischio, generando un profitto netto stimato di oltre €15.000 al netto dei costi di retention.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TiglJvX3sAcY-IfouEEYokVW26zvqhwV)
