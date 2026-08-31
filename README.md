@@ -1,16 +1,23 @@
-# 📉 Early Warning Churn System con XGBoost & Explainable AI (SHAP)
+# Telco Customer Churn Prediction (XGBoost + SHAP)
 
-## 📌 Executive Summary
-Acquisire nuovi clienti costa da 5 a 7 volte più che trattenerne uno esistente. Questo progetto implementa un sistema predittivo per identificare i clienti a rischio abbandono con almeno 30 giorni di anticipo e ne diagnostica le cause scatenanti tramite Explainable AI (SHAP), permettendo azioni mirate di Customer Success.
+A machine learning project to predict customer churn in the telecom sector and explain why customers leave using SHAP values.
 
-## 🛠️ Architettura Tecnica
-- **Dataset:** IBM Telco Customer Churn (7.000+ clienti).
-- **Modello:** XGBoost Classifier con bilanciamento classi tramite `scale_pos_weight`.
-- **Explainability:** SHAP TreeExplainer per feature importance globale e waterfall plots per diagnosi del singolo cliente.
-- **Metriche:** ROC-AUC: 0.84 | PR-AUC: 0.65.
+## Overview
+Retaining existing customers is significantly cheaper than acquiring new ones. The goal of this project is to build an early warning system that flags at-risk customers and highlights the key drivers behind their decision.
 
-## 💡 Business Impact & Risultati
-- **Fattori Critici di Churn:** Contratti mensili (*Month-to-Month*), metodo di pagamento con *Electronic Check* e assenza di servizi di supporto tecnico (*TechSupport*).
-- **Simulazione ROI:** Su un campione di test di ~1.400 clienti, il modello consente di recuperare fino al 40% dei clienti a rischio, generando un profitto netto stimato di oltre €15.000 al netto dei costi di retention.
+## Pipeline
+- **Dataset:** IBM Telco Customer Churn (~7,000 customers).
+- **Data Prep:** Cleaned missing values in `TotalCharges`, applied one-hot encoding, and used stratified splitting.
+- **Modeling:** Trained an **XGBoost Classifier** with `scale_pos_weight` to handle class imbalance without synthetic sampling.
+- **Explainability:** Used **SHAP (SHapley Additive exPlanations)** to interpret both global feature importance and individual customer risk profiles.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TiglJvX3sAcY-IfouEEYokVW26zvqhwV)
+## Key Results
+- **ROC-AUC:** `0.84`
+- **Top Churn Drivers:** Month-to-month contracts, payment via Electronic Check, and absence of Tech Support.
+- **Business Impact:** Targeting the top at-risk cohort with proactive retention offers can save an estimated ~€25,000+ in customer lifetime value on the test sample.
+
+## Quickstart
+```bash
+git clone [https://github.com/](https://github.com/)<MRigoni10>/telco-churn-explainable-ai.git
+cd telco-churn-explainable-ai
+pip install -r requirements.txt
