@@ -19,4 +19,4 @@ Retaining existing customers is significantly cheaper than acquiring new ones. T
 ## How to Run the Project
 The complete code is available in the interactive notebook. You can run it with a single click:
 
-[! [Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TiglJvX3sAcY-IfouEEYokVW26zvqhwV)
+[! [Open in Colab](https://colab.research.google.com/drive/1TiglJvX3sAcY-IfouEEYokVW26zvqhwV)]
